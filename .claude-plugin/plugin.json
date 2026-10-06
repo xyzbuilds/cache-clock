@@ -1,0 +1,26 @@
+{
+  "name": "cache-clock",
+  "version": "0.1.0",
+  "description": "Shows how long Claude Code's prompt cache stays warm, how many tokens your next message re-sends, and what it costs now versus after the cache expires.",
+  "author": {
+    "name": "XYZ Makes"
+  },
+  "homepage": "https://github.com/xyzbuilds/cache-clock",
+  "repository": "https://github.com/xyzbuilds/cache-clock",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "showLine": {
+      "type": "boolean",
+      "title": "Cache clock: line under the prompt",
+      "description": "Cache time left, hit rate, misses and the next message's cost",
+      "default": true
+    },
+    "notices": {
+      "type": "boolean",
+      "title": "Cache clock: notices in the conversation",
+      "description": "A dim line when the cache expires and when a message rebuilds it",
+      "default": true
+    }
+  }
+}
